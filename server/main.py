@@ -14,7 +14,7 @@ from pymodbus.server import ModbusTcpServer
 # ============================================================
 
 HOST = "0.0.0.0"
-PORT = 5020
+PORT = 502
 DEVICE_ID = 1
 
 # Количество элементов в каждой области
@@ -81,13 +81,9 @@ HELP = """
 
 Примеры:
 
-  set di 0 1
   set co 10 1
-  set ir 20 1234
-  set hr 100 65535
 
   get di 0
-  get hr 100
   get hr 100 10
 
   dump co 0 20
